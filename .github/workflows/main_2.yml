@@ -1,0 +1,12 @@
+name: Run on test
+
+on:
+  push: 
+
+jobs:
+  build:
+    runs-on: ubunu-latest
+    steps: 
+             
+      -name: Lounch tests
+       run: pytest
