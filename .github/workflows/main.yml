@@ -1,0 +1,14 @@
+name: Run on test
+
+on:
+  push: 
+
+jobs:
+  build:
+    runs-on: ubunu-latest
+    steps: 
+      -name: Python
+       uses: action/setup-python@v4
+       
+      -name: Lounch tests
+       run: pytest
