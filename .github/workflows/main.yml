@@ -5,7 +5,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubunu-latest
+    runs-on: ubuntu-latest
     steps: 
       -name: Python
        uses: action/setup-python@v4
