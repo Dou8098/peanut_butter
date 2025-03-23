@@ -7,8 +7,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      -name: Python
-       uses: action/setup-python@v4
-       
-      -name: Lounch tests
-       run: pytest
+      - name: Lounching code
+        uses: actions/checkout@v4
+        
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'  
+
+      - name: Install dependencies
+        run: pip install pytest
